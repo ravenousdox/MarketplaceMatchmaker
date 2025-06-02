@@ -33,9 +33,9 @@ class MarketplaceBot(commands.Bot):
     
     def __init__(self):
         intents = discord.Intents.default()
-        intents.message_content = True
+        intents.message_content = False  # Not needed for slash commands
         intents.guilds = True
-        intents.members = True
+        intents.members = False  # Not needed for marketplace functionality
         
         super().__init__(
             command_prefix='!',

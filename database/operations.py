@@ -11,11 +11,9 @@ class DatabaseManager:
     def __init__(self, db_path: str):
         self.db_path = db_path
     
-    async def get_connection(self):
+    def get_connection(self):
         """Get database connection with foreign keys enabled"""
-        db = await aiosqlite.connect(self.db_path)
-        await db.execute("PRAGMA foreign_keys = ON")
-        return db
+        return aiosqlite.connect(self.db_path)
     
     async def close(self):
         """Close database connections"""
@@ -26,6 +24,7 @@ class DatabaseManager:
         """Ensure user exists in database, create if not"""
         try:
             async with self.get_connection() as db:
+                await db.execute("PRAGMA foreign_keys = ON")
                 await db.execute("""
                     INSERT OR REPLACE INTO users (user_id, discord_username, last_activity)
                     VALUES (?, ?, CURRENT_TIMESTAMP)
@@ -41,6 +40,7 @@ class DatabaseManager:
         """Add a new game item (admin only)"""
         try:
             async with self.get_connection() as db:
+                await db.execute("PRAGMA foreign_keys = ON")
                 cursor = await db.execute("""
                     INSERT INTO game_items (item_name, category, description, created_by)
                     VALUES (?, ?, ?, ?)
@@ -68,6 +68,7 @@ class DatabaseManager:
         """Get all game items for cache loading"""
         try:
             async with self.get_connection() as db:
+                await db.execute("PRAGMA foreign_keys = ON")
                 cursor = await db.execute("SELECT item_id, item_name, category FROM game_items")
                 rows = await cursor.fetchall()
                 return [{"id": row[0], "name": row[1], "category": row[2]} for row in rows]
