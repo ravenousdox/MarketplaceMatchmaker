@@ -1,0 +1,386 @@
+PS C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker>  & 'C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\Scripts\python.exe' 'c:\Users\Caleb Henderson\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\libs\debugpy\launcher' '60355' '--' 'main.py' 
+2025-06-02 01:16:05,333 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-02 01:16:05,334 - discord.client - INFO - logging in using static token
+2025-06-02 01:16:05,334 - discord.ext.commands.bot - WARNING - Privileged message content intent is missing, commands may not work as expected.
+2025-06-02 01:16:05,869 - __main__ - INFO - Setting up bot components...
+2025-06-02 01:16:05,870 - database.schema - INFO - Initializing database at marketplace.db
+2025-06-02 01:16:05,877 - database.schema - INFO - Database initialized successfully
+2025-06-02 01:16:05,881 - utils.cache - INFO - Loaded 0 items into cache
+2025-06-02 01:16:06,277 - __main__ - INFO - Commands synced successfully
+2025-06-02 01:16:06,505 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 595da02a01295cff8f1cc5c625585b1a).
+2025-06-02 01:16:08,511 - __main__ - INFO - MarketPlace#0187 has connected to Discord!
+2025-06-02 01:16:08,511 - __main__ - INFO - Bot is in 0 guilds
+2025-06-02 01:23:45,239 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_add_item'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 36, in add_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_add_item' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:00,186 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_add_item'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 36, in add_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_add_item' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:05,498 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_add_item'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 36, in add_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_add_item' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:12,167 - discord.app_commands.tree - ERROR - Ignoring exception in command 'items'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 305, in search_items
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'items' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:22,120 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_list_items'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 306, in list_items
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_list_items' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:37,718 - discord.app_commands.tree - ERROR - Ignoring exception in command 'buy'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 27, in buy_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'buy' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:43,779 - discord.app_commands.tree - ERROR - Ignoring exception in command 'sell'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 112, in sell_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'sell' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:24:51,038 - discord.app_commands.tree - ERROR - Ignoring exception in command 'mylistings'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 241, in my_listings
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'mylistings' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:25:00,876 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_add_item'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 36, in add_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_add_item' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:25:24,195 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_stats'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 194, in marketplace_stats
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_stats' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:25:30,038 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_list_items'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 306, in list_items
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_list_items' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:25:35,523 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_reload_cache'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 262, in reload_cache
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_reload_cache' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:25:41,339 - discord.app_commands.tree - ERROR - Ignoring exception in command 'buy'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 27, in buy_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'buy' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:29:23,148 - discord.app_commands.tree - ERROR - Ignoring exception in command 'sell'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 112, in sell_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'sell' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:29:38,513 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_reload_cache'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 262, in reload_cache
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_reload_cache' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:29:45,139 - discord.app_commands.tree - ERROR - Ignoring exception in command 'admin_list_items'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\admin.py", line 306, in list_items
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'admin_list_items' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-02 01:32:24,006 - discord.app_commands.tree - ERROR - Ignoring exception in command 'buy'
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 857, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\commands\marketplace.py", line 27, in buy_item
+    await interaction.response.defer(ephemeral=True)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\interactions.py", line 844, in defer
+    response = await adapter.create_interaction_response(
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\webhook\async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "C:\Users\Caleb Henderson\Desktop\MarketplaceMatchmaker\venv\lib\site-packages\discord\app_commands\commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'buy' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
